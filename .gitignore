@@ -50,3 +50,13 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+
+#---DB CONFIG---
+core/config/db.php
+core/runtime/cache/*
+core/runtime/logs/*
+assets/*
+avatar/*
+config.php
+library/logs/*
