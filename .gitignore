@@ -1,37 +1,52 @@
-#Dict
-/includes/dict/readme.txt
-#Debug Files
-/includes/PHPAnalysis.dict_build.php
-/includes/PHPAnalysis.demo.php
-/includes/PDO.Example.php
-#Duplicate Files
-/static/js/MD5.js
-/static/js/jquery.autocomplete.js
-/static/editor/ueditor.all.js
-/static/editor/ueditor.parse.js
-/static/editor/themes/default/css/ueditor.css
-#Echarts
-/static/echarts/.DS_Store
-/static/echarts/echarts-all.js
-/static/echarts/chart/bar.js
-/static/echarts/chart/chord.js
-/static/echarts/chart/eventRiver.js
-/static/echarts/chart/force.js
-/static/echarts/chart/funnel.js
-/static/echarts/chart/gauge.js
-/static/echarts/chart/k.js
-/static/echarts/chart/map.js
-/static/echarts/chart/pie.js
-/static/echarts/chart/radar.js
-/static/echarts/chart/scatter.js
-/static/echarts/chart/tree.js
-/static/echarts/chart/treemap.js
-/static/echarts/chart/venn.js
-/static/echarts/chart/wordCloud.js
-#Server related files and data files
-*.lock
-/includes/logs
-/upload
-#These files will be created automatically after install
-/.htaccess
-/config.php
+!assets/.gitignore
+protected/runtime/*
+!protected/runtime/.gitignore
+protected/data/*.db
+themes/classic/views/
+
+# =========================
+# Operating System Files
+# =========================
+
+# OSX
+# =========================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+# =========================
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk

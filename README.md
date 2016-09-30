@@ -1,72 +1,46 @@
-# Carbon-Forum    [![Build Status](https://travis-ci.org/lincanbin/Carbon-Forum.svg?branch=develop)](https://travis-ci.org/lincanbin/Carbon-Forum)
+**介绍：**
 
-A high performance open-source forum software written in PHP.
+极简论坛系统，功能简单，界面简洁，移动优先。
 
+功能简单
+只有基本的发帖，回帖，及一些会员服务功能
 
+界面简洁
+没有花哨的设计，简单明了
 
-## Related Projects
+移动优先
+前端采用bootstrap，适配电脑，平板，手机
 
-* [API Documentation](https://github.com/lincanbin/Carbon-Forum-API-Documentation)
-* [Android Client for Carbon Forum](https://github.com/lincanbin/Android-Carbon-Forum)
+**空间及环境要求：**
 
-## Demo/Official Website
+1. PHP 5.4.0及以上
+2. 必须安装open_ssl扩展
+3. core/config目录下db.php和params.php文件要求写权限
+4. core/runtime目录及里面的目录文件要有写权限
+5. 根目录下的assets目录和avatar目录要求写权限
 
-* [项目简体中文官网: www.94cb.com](http://www.94cb.com/)
-* [Project's English Official Website: en.94cb.com](http://en.94cb.com/)
-* [專案繁體中文官網: tw.94cb.com](http://tw.94cb.com/)
+**安装步骤：**
 
-## Requirements
+1. 下载simpleforum安装文件，解压
+2. 修改core/config/web.php第19行，随便改几位就行了，这是检证cookie用的
+ ```
+ 'cookieValidationKey' => 'hwdn8-iyIh5LylPLpD1PoplqjUka98Ba',
+ ```
+3. 将整个安装包上传到网站空间
+4. 在浏览器中输入网址： http://你的网址/install.php  进入安装界面
+5. 安装第一步：会显示你的网站空间环境是否符合安装条件，如果符合请点击进入下一步
+6. 安装第二部：填写mysql数据库信息，填写完后，会执行sql生成表及插入数据，自动进入下一步
+7. 安装第三部：创建管理员帐号，如果你的网站空间开启了opcache等加速扩展，可能会报错，请稍等片刻，再重新填写。
+8. 管理员帐号创建后，安装操作就完成了。
 
-* PHP version 5.4.0 or higher.
-* The [__PDO_MYSQL__](http://php.net/manual/en/ref.pdo-mysql.php) PHP Package.
-* MySQL version 5.0 or higher.
-* The [__mod_rewrite__](http://httpd.apache.org/docs/2.2/mod/mod_rewrite.html) Apache module / [__ngx_http_rewrite_module__](https://github.com/lincanbin/Carbon-Forum/blob/master/nginx.conf) / [__ISAPI_Rewrite__](http://www.helicontech.com/isapi_rewrite/) IIS module / IIS7+. 
-* The [__mod_headers__](http://httpd.apache.org/docs/2.2/mod/mod_headers.html) module is needed if you run Carbon Forum on Apache HTTP Server.
+**帮助文档：**
 
-## Install
-
-1. Ensure that the entire directory are writable.
-2. Open ```http://www.yourdomain.com/install``` and install.
-3. Open the Forum, and register. The first registered user will become administrator.
-
-## Upgrade
-
-1. Backup files( ```/upload/*``` ) and databases. 
-2. Delete all files except ```/upload/*```, and upload the new version files that extract from the the latest version packet. 
-3. Ensure that the entire directory are writable.
-4. Open ```http://www.yourdomain.com/update``` and update.
-
-## Features
-
-* Mobile version. 
-* Real-time notifications push. 
-* Discussions Tags based with Quora/StackOverflow style. 
-* High FE&BE performance. 
-* Full asynchronous design, improve the loading speed. 
-* Excellent search engine optimization (mobile adaptation Sitemap support) .
-* Perfect draft saving mechanism. 
-* The modern Notification Center (currently supported and @ replies).
-
-## Contributors
-
-[Show all](https://github.com/lincanbin/Carbon-Forum/graphs/contributors)
-
-
-
-## License
-
-``` 
-Copyright 2006-2016 Canbin Lin (lincanbin@hotmail.com)
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-   http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-```
+1. Nginx配置 http://simpleforum.org/t/49
+2. SMTP服务器设置 http://simpleforum.org/t/39
+3. 开启验证码 http://simpleforum.org/t/43
+4. 编辑器选择 http://simpleforum.org/t/41
+5. 开启缓存 http://simpleforum.org/t/3
+6. 开启第三方帐号登录 http://simpleforum.org/t/2
+7. 用户名过滤 http://simpleforum.org/t/54
+8. 网站验证 http://simpleforum.org/t/55
+9. 上传设置 http://simpleforum.org/t/83
