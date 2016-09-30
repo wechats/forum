@@ -16,7 +16,7 @@ $config = [
     'defaultRoute' => 'topic/index',
     'components' => [
         'request' => [
-            'cookieValidationKey' => 'hwdn8-iyIh5LylPLpD1PoplqjUka98Ba',
+            'cookieValidationKey' => 'hwdn8-iyIh5LylPLpD1PoplqjUka9123',
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
