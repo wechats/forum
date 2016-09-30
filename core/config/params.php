@@ -1,9 +1,9 @@
 <?php
 return [
   'settings' => [
-    'site_name' => '微信小程序论坛',
+    'site_name' => '微信小程序',
     'slogan' => '专爱微信小程序开发',
-    'description' => '微信小程序开发，资源分享',
+    'description' => '微信小程序开发交流，资源分享',
     'icp' => '',
     'admin_email' => '',
     'offline' => 0,

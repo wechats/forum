@@ -54,8 +54,7 @@ $RECYCLE.BIN/
 
 #---DB CONFIG---
 core/config/db.php
-core/runtime/cache/*
-core/runtime/logs/*
+core/runtime/*
 assets/*
 avatar/*
 config.php
