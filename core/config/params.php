@@ -20,7 +20,7 @@ return [
     'theme' => '',
     'theme_mobile' => '',
     'head_meta' => '',
-    'analytics_code' => '',
+    'analytics_code' => '<script>var _hmt = _hmt || [];(function() {  var hm = document.createElement("script");  hm.src = "//hm.baidu.com/hm.js?5a87cd7ab7baa74f3c8128528ebc4f9c";  var s = document.getElementsByTagName("script")[0];   s.parentNode.insertBefore(hm, s);})();</script>',
     'footer_links' => [
     ],
     'timezone' => 'Asia/Shanghai',
